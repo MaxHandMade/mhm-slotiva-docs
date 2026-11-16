@@ -39,7 +39,7 @@ From here you can:
   between. Tick **Email the new time to the customer** to send the *Booking time changed* email, and **Count this as a change**
   when the customer asked for it.
 - **Mark completed** or **Mark no-show** after the appointment.
-- **Cancel appointment…** — the time opens again.
+- **Cancel appointment…** — the time opens again (a *Conflict* appointment never held a time, so nothing opens).
 - For a bank-transfer order that is awaiting payment, **extend the payment window**.
 
 ## Adding an appointment by hand

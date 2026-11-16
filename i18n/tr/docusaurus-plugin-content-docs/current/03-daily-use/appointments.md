@@ -37,7 +37,7 @@ Buradan şunları yapabilirsin:
   saati değişti* e-postasını göndermek için **Müşteriye yeni saati e-postayla bildir**'i, değişikliği müşteri istediyse **Değişiklik
   hakkından düş (müşteri istedi)**'yi işaretle.
 - Randevudan sonra **Tamamlandı işaretle** ya da **Gelmedi işaretle**.
-- **Randevuyu iptal et…** — saat yeniden açılır.
+- **Randevuyu iptal et…** — saat yeniden açılır (*Çakışma* durumundaki bir randevu hiç saat tutmadığı için açılan bir şey olmaz).
 - Ödeme bekleyen bir havale siparişinde **ödeme süresini uzat**.
 
 ## Elle randevu eklemek

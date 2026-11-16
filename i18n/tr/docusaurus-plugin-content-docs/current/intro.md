@@ -21,7 +21,7 @@ görüşmesi. Müşterin günü ve bir ya da birkaç saati **doğrudan WooCommer
    - **Kartla ödeme:** saat, kart ödemesi süresince tutulur (varsayılan 45 dakika).
    - **Havale:** saat, havale son tarihine kadar tutulur (varsayılan 24 saat). Ödeme gelmezse sipariş iptal edilir ve saat yeniden
      açılır.
-   - **Kapıda ödeme** ve ücretsiz siparişler: randevu hemen onaylanır.
+   - **İşletmede ödeme** ve ücretsiz siparişler: randevu hemen onaylanır.
 4. **Randevu onaylanır** ve müşteriye takvim dosyalı bir e-posta gider. Randevularını sipariş sayfasında ve *Hesabım* bölümünde de
    görür.
 5. **Sen WordPress içinden yönetirsin:** Slotiva → Randevular bugünkü, yaklaşan, geçmiş ve iptal edilmiş randevuları gösterir.

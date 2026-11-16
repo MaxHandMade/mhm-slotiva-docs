@@ -36,7 +36,7 @@ Each entry can carry a short note for yourself. Entries are listed with a **Dele
 | Latest booking | 14 days ahead | How far ahead customers can book (1 to 62 days). |
 | Break between appointments | 0 minutes | Free time kept after each appointment. |
 | Payment time for bank transfers | 24 hours | The time is held this long for a bank-transfer order. When it runs out, the order is cancelled and the time opens again. |
-| Hold time for card payments | 45 minutes | The time is held this long while a card payment completes (at least 15). If the payment does not arrive, the time opens again; the order itself is not cancelled. Keep it longer than your payment provider's own time limit. |
+| Hold time for card payments | 45 minutes | The time is held this long while a card payment completes (at least 15). If the payment does not arrive, the time opens again; the order itself is not cancelled. With PayTR, Slotiva automatically uses the longer of this value and PayTR's own time limit + 15 minutes; with other card providers, set it longer than the provider's time limit yourself. |
 | Reminder email | On, 24 hours before | Sends the customer a reminder before the appointment. |
 
 Products can override **Earliest booking** and **Latest booking** on their own Slotiva tab — see

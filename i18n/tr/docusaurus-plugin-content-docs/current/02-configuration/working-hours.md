@@ -36,7 +36,7 @@ Her kayda kendin için kısa bir not ekleyebilirsin. Kayıtlar bir **Sil** bağl
 | En geç | 14 gün ileri | Müşterinin ne kadar ileriye randevu alabileceği (1 ile 62 gün arası). |
 | Randevular arası ara | 0 dakika | Her randevudan sonra boş bırakılan süre. |
 | Havale için ödeme süresi | 24 saat | Havale siparişinde saat bu kadar tutulur. Süre dolunca sipariş iptal edilir ve saat yeniden açılır. |
-| Kart ödemesinde saati tutma süresi | 45 dakika | Kart ödemesi tamamlanırken saat bu kadar tutulur (en az 15). Ödeme gelmezse saat yeniden açılır; siparişin kendisi iptal edilmez. Ödeme sağlayıcının kendi süre sınırından uzun tut. |
+| Kart ödemesinde saati tutma süresi | 45 dakika | Kart ödemesi tamamlanırken saat bu kadar tutulur (en az 15). Ödeme gelmezse saat yeniden açılır; siparişin kendisi iptal edilmez. PayTR'de Slotiva bu değer ile PayTR'nin kendi süre sınırı + 15 dakikadan büyük olanı kendiliğinden kullanır; başka kart sağlayıcılarında bu süreyi sağlayıcının süre sınırından uzun tut. |
 | Hatırlatma e-postası | Açık, 24 saat önce | Müşteriye randevudan önce hatırlatma gönderir. |
 
 Ürünler **En erken** ve **En geç** kurallarını kendi Slotiva sekmelerinde değiştirebilir — bkz.

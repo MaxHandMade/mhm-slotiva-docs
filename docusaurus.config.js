@@ -54,14 +54,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/social-card.png',
+      image: 'img/social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'MHM Slotiva',
+        // The horizontal logo already carries the "MHM Slotiva" wordmark: no separate title text.
         logo: {
           alt: 'MHM Slotiva',
+          height: 32,
           src: 'img/logo.png',
           srcDark: 'img/logo-dark.png',
         },

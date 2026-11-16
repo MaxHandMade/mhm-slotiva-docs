@@ -325,5 +325,41 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiketler",
     "description": "The title of the tag list page"
+  },
+  "home.card.start.title": {
+    "message": "Başla"
+  },
+  "home.card.start.text": {
+    "message": "Slotiva ne yapar, bir randevu nasıl ilerler ve birkaç dakikada nasıl kurulur."
+  },
+  "home.card.daily.title": {
+    "message": "Günlük kullanım"
+  },
+  "home.card.daily.text": {
+    "message": "Müşterinin ödeme sayfasında gördükleri ve randevuları nasıl yönettiğin."
+  },
+  "home.card.license.title": {
+    "message": "Lisans ve destek"
+  },
+  "home.card.license.text": {
+    "message": "Lisans sana ne kazandırır, bitince ne olur ve yardımı nereden alırsın."
+  },
+  "home.meta.title": {
+    "message": "WooCommerce için saatlik randevu"
+  },
+  "home.meta.description": {
+    "message": "MHM Slotiva belgeleri: müşteri saatini doğrudan WooCommerce ödeme sayfasında seçer."
+  },
+  "home.banner.alt": {
+    "message": "MHM Slotiva — WooCommerce için saatlik randevu. Müşteri saatini ödeme sayfasında seçer."
+  },
+  "home.lead": {
+    "message": "Kendi WooCommerce mağazanda saatlik randevu sat. Müşterin ödeme sayfasında bir ya da birkaç saat seçer; Slotiva ödeme sürerken saati tutar, sen her şeyi WordPress içinden yönetirsin."
+  },
+  "home.cta": {
+    "message": "Belgeleri oku"
+  },
+  "home.requires": {
+    "message": "WordPress 7.0+, PHP 8.1+ ve Ödeme (Checkout) bloğuyla WooCommerce 11.2+ gerekir."
   }
 }

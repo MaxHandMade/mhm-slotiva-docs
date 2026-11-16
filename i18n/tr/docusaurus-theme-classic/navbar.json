@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "MHM Slotiva",
-    "description": "The title in the navbar"
-  },
   "logo.alt": {
     "message": "MHM Slotiva",
     "description": "The alt text of navbar logo"

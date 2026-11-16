@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmhm_slotiva_docs=globalThis.webpackChunkmhm_slotiva_docs||[]).push([[903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/mhm-slotiva-docs/release-notes","blogTitle":"Release notes","authorsListPath":"/mhm-slotiva-docs/release-notes/authors"}')}}]);

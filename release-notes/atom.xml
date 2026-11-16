@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://MaxHandMade.github.io/mhm-slotiva-docs/release-notes</id>
+    <title>MHM Slotiva Documentation Blog</title>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://MaxHandMade.github.io/mhm-slotiva-docs/release-notes"/>
+    <subtitle>MHM Slotiva Documentation Blog</subtitle>
+    <icon>https://MaxHandMade.github.io/mhm-slotiva-docs/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Slotiva 1.0.3]]></title>
+        <id>https://MaxHandMade.github.io/mhm-slotiva-docs/release-notes/slotiva-1-0-3</id>
+        <link href="https://MaxHandMade.github.io/mhm-slotiva-docs/release-notes/slotiva-1-0-3"/>
+        <updated>2026-11-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Running the setup wizard again keeps your product's own settings, clearer limits, and help links to this site.]]></summary>
+        <content type="html"><![CDATA[<p>Slotiva 1.0.3 is a maintenance release. If you have already set up a bookable product, the most important change is that running
+the setup wizard again no longer touches that product's own settings.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed">Fixed<a href="https://maxhandmade.github.io/mhm-slotiva-docs/release-notes/slotiva-1-0-3#fixed" class="hash-link" aria-label="Direct link to Fixed" title="Direct link to Fixed" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Running the setup wizard again keeps your product's settings.</strong> An existing bookable product keeps its own appointment length,
+minimum hours per order and pricing. Step 3 tells you when the product keeps its own length, and the customer preview and the
+summary show that length. See <a class="" href="https://maxhandmade.github.io/mhm-slotiva-docs/docs/getting-started/setup-wizard#step-3">Setup wizard</a>.</li>
+<li class=""><strong>The summary always shows your service type</strong>, also when you kept the suggested type without clicking a card.</li>
+<li class=""><strong>One limit for the appointment length: 480 minutes (8 hours).</strong> It applies everywhere you can set a length — the setup wizard,
+Slotiva → Working hours and the product's Slotiva tab. If a longer length was saved earlier, it does not stop you from saving
+your other working-hours settings. The wizard also refuses a price that is not a valid number.</li>
+<li class="">Activating Slotiva in a way that cannot open the setup wizard (for example from the command line or network-wide) no longer
+leaves an older "open the wizard" note behind that would send you to the wizard later.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed">Changed<a href="https://maxhandmade.github.io/mhm-slotiva-docs/release-notes/slotiva-1-0-3#changed" class="hash-link" aria-label="Direct link to Changed" title="Direct link to Changed" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>License screen:</strong> the same views and texts as before, now with a help link under every state once a key is entered. The update hint names the
+current WordPress menu: <strong>Plugins → Add Plugin → Upload Plugin</strong>.</li>
+<li class=""><strong>Slotiva → Settings → Bookable products</strong> now says <strong>Per slot</strong> instead of "Per hour", the same as the product's Slotiva tab.</li>
+<li class=""><strong>The payment check in the setup wizard</strong> now says where to turn a payment method on: WooCommerce → Settings → Payments.</li>
+<li class="">Turkish admin texts now use the same informal voice everywhere.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="added">Added<a href="https://maxhandmade.github.io/mhm-slotiva-docs/release-notes/slotiva-1-0-3#added" class="hash-link" aria-label="Direct link to Added" title="Direct link to Added" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Help links to this documentation:</strong> <strong>First-time setup guide</strong> at the end of the setup wizard, <strong>How to fix</strong> on every
+checkout-check row that needs attention, and <strong>About this license status</strong> on the License screen. Admins who use WordPress in
+Turkish get the Turkish pages.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="updating">Updating<a href="https://maxhandmade.github.io/mhm-slotiva-docs/release-notes/slotiva-1-0-3#updating" class="hash-link" aria-label="Direct link to Updating" title="Direct link to Updating" translate="no">​</a></h2>
+<p>Download 1.0.3 from your account and install it via <strong>Plugins → Add Plugin → Upload Plugin</strong> — see
+<a class="" href="https://maxhandmade.github.io/mhm-slotiva-docs/docs/getting-started/installation#updating">Updating</a>. Your appointments, working hours and settings are kept.</p>]]></content>
+    </entry>
+</feed>

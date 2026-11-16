@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://MaxHandMade.github.io/mhm-slotiva-docs/tr/release-notes</id>
+    <title>MHM Slotiva Documentation Blog</title>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://MaxHandMade.github.io/mhm-slotiva-docs/tr/release-notes"/>
+    <subtitle>MHM Slotiva Documentation Blog</subtitle>
+    <icon>https://MaxHandMade.github.io/mhm-slotiva-docs/tr/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Slotiva 1.0.3]]></title>
+        <id>https://MaxHandMade.github.io/mhm-slotiva-docs/tr/release-notes/slotiva-1-0-3</id>
+        <link href="https://MaxHandMade.github.io/mhm-slotiva-docs/tr/release-notes/slotiva-1-0-3"/>
+        <updated>2026-11-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Kurulum sihirbazını yeniden çalıştırmak ürünün kendi ayarlarını korur, sınırlar netleşti ve bu siteye yardım bağlantıları geldi.]]></summary>
+        <content type="html"><![CDATA[<p>Slotiva 1.0.3 bir bakım sürümü. Randevulu bir ürünü zaten kurduysan en önemli değişiklik şu: kurulum sihirbazını yeniden
+çalıştırmak artık o ürünün kendi ayarlarına dokunmuyor.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="düzeltilenler">Düzeltilenler<a href="https://maxhandmade.github.io/mhm-slotiva-docs/tr/release-notes/slotiva-1-0-3#d%C3%BCzeltilenler" class="hash-link" aria-label="Düzeltilenler doğrudan bağlantı" title="Düzeltilenler doğrudan bağlantı" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Kurulum sihirbazını yeniden çalıştırmak ürünün ayarlarını korur.</strong> Mevcut randevulu ürün kendi randevu süresini, siparişteki
+en az saat sayısını ve fiyatlamasını korur. 3. adım ürünün kendi süresini koruduğunu söyler; müşteri önizlemesi ve özet o süreyi
+gösterir. Bkz. <a class="" href="https://maxhandmade.github.io/mhm-slotiva-docs/tr/docs/getting-started/setup-wizard#step-3">Kurulum sihirbazı</a>.</li>
+<li class=""><strong>Özet hizmet türünü her zaman gösterir</strong>, önerilen türü bir karta tıklamadan bıraktığında da.</li>
+<li class=""><strong>Randevu süresi için tek sınır: 480 dakika (8 saat).</strong> Süre girebildiğin her yerde geçerli — kurulum sihirbazı, Slotiva →
+Çalışma saatleri ve ürünün Slotiva sekmesi. Daha önce daha uzun bir süre kaydedildiyse bu, diğer çalışma saati ayarlarını
+kaydetmeni engellemez. Sihirbaz geçerli bir sayı olmayan fiyatı da kabul etmez.</li>
+<li class="">Slotiva'yı kurulum sihirbazını açamayacak bir yolla etkinleştirmek (örneğin komut satırından ya da ağ genelinde) artık seni
+sonra sihirbaza gönderecek eski bir "sihirbazı aç" notunu geride bırakmıyor.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="değişenler">Değişenler<a href="https://maxhandmade.github.io/mhm-slotiva-docs/tr/release-notes/slotiva-1-0-3#de%C4%9Fi%C5%9Fenler" class="hash-link" aria-label="Değişenler doğrudan bağlantı" title="Değişenler doğrudan bağlantı" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Lisans ekranı:</strong> görünümler ve metinler aynı, artık anahtar girildikten sonra her durumun altında bir yardım bağlantısı var. Güncelleme ipucu
+WordPress'in güncel menüsünü söylüyor: <strong>Eklentiler → Eklenti ekle → Eklenti yükle</strong>.</li>
+<li class=""><strong>Slotiva → Ayarlar → Randevulu ürünler</strong> fiyatlamayı İngilizcede de ürünün Slotiva sekmesindeki sözcükle gösteriyor (<strong>Per slot</strong>); Türkçede ikisi zaten <strong>Saat başına</strong>.</li>
+<li class=""><strong>Kurulum sihirbazındaki ödeme kontrolü</strong> artık bir ödeme yöntemini nereden açacağını söylüyor: WooCommerce → Ayarlar → Ödemeler.</li>
+<li class="">Türkçe yönetim metinleri artık her yerde aynı samimi "sen" dilini kullanıyor.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="eklenenler">Eklenenler<a href="https://maxhandmade.github.io/mhm-slotiva-docs/tr/release-notes/slotiva-1-0-3#eklenenler" class="hash-link" aria-label="Eklenenler doğrudan bağlantı" title="Eklenenler doğrudan bağlantı" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Bu belgelere yardım bağlantıları:</strong> kurulum sihirbazının sonunda <strong>İlk kurulum rehberi</strong>, ödeme sayfası kontrolünde ilgilenmen
+gereken her satırda <strong>Nasıl düzeltilir</strong> ve Lisans ekranında <strong>Bu lisans durumu hakkında</strong>. WordPress'i Türkçe kullanan
+yöneticiler Türkçe sayfalara gider.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="güncelleme">Güncelleme<a href="https://maxhandmade.github.io/mhm-slotiva-docs/tr/release-notes/slotiva-1-0-3#g%C3%BCncelleme" class="hash-link" aria-label="Güncelleme doğrudan bağlantı" title="Güncelleme doğrudan bağlantı" translate="no">​</a></h2>
+<p>1.0.3'ü hesabından indir ve <strong>Eklentiler → Eklenti ekle → Eklenti yükle</strong> ile kur — bkz.
+<a class="" href="https://maxhandmade.github.io/mhm-slotiva-docs/tr/docs/getting-started/installation#g%C3%BCncelleme">Güncelleme</a>. Randevuların, çalışma saatlerin ve ayarların korunur.</p>]]></content>
+    </entry>
+</feed>

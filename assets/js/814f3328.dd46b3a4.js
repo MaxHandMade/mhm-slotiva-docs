@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmhm_slotiva_docs=globalThis.webpackChunkmhm_slotiva_docs||[]).push([[472],{5513(s){s.exports=JSON.parse('{"title":"All releases","items":[{"title":"Slotiva 1.0.3","permalink":"/mhm-slotiva-docs/release-notes/slotiva-1-0-3","unlisted":false,"date":"2026-11-16T00:00:00.000Z"}]}')}}]);

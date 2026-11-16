@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmhm_slotiva_docs=globalThis.webpackChunkmhm_slotiva_docs||[]).push([[240],{5604(e){e.exports=JSON.parse('{"metadata":{"permalink":"/mhm-slotiva-docs/release-notes","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"What changes for your shop in each MHM Slotiva release.","blogTitle":"Release notes"}}')}}]);

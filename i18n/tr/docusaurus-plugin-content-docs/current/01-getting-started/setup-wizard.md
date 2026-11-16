@@ -14,8 +14,8 @@ Sihirbaz, Slotiva'yı etkinleştirir etkinleştirmez açılır. Yaklaşık üç 
 ## Adım 1 — Hizmet {#step-1}
 
 Ne sattığını seç: **Danışmanlık**, **Ders / eğitim**, **Muayene / seans** ya da **Başka bir hizmet**. Slotiva seçimine göre süre ve
-metin önerir. Sonra bir randevunun ne kadar sürdüğünü seç: 30, 45, 60, 90 ya da 120 dakika veya 15 dakikanın herhangi bir katı
-için **Başka…**.
+metin önerir. Sonra bir randevunun ne kadar sürdüğünü seç: 30, 45, 60, 90 ya da 120 dakika veya 15 ile 480 dakika (8 saat)
+arasında 15 dakikanın herhangi bir katı için **Başka…**.
 
 Burada seçtiğin süre, müşterinin aldığı bir "saat"tir. Daha uzun seans isteyen müşteri art arda birkaç saat alabilir — buna 3.
 adımda izin verirsin.
@@ -39,6 +39,12 @@ Müşterinin ne satın alacağına karar ver:
 - **Mevcut bir ürünü kullan** — ürünlerinden birini seç ve bir saatin fiyatını belirle. Ürün taslak ya da özelse sihirbaz onun
   yayınlanacağını söyler.
 
+Fiyat geçerli bir sayı olmalı; 0 kabul edilir (örneğin ücretsiz ilk görüşme). Değilse sihirbaz **Geçerli bir fiyat gir.** der.
+
+Seçtiğin ürün **zaten randevuluysa** kendi süresini, en az saat sayısını ve fiyatlamasını korur — sihirbazı yeniden çalıştırmak
+bunları sıfırlamaz (yalnız aşağıda **Evet** demek sabit fiyatlı ürünü saat başına fiyata çevirir). Süresi 1. adımdakinden farklıysa adım **Bu ürün kendi süresini koruyor (… dk). Ürünün Slotiva sekmesinden
+değiştirebilirsin.** der; müşteri önizlemesi ve 5. adımdaki özet ürünün süresini kullanır.
+
 Sonra şu soruyu cevapla: **Müşteri tek seferde birden fazla saat alabilsin mi?**
 
 - **Hayır, tek saat** — her siparişte bir randevu, sabit fiyat.
@@ -53,11 +59,13 @@ Slotiva bu adım her açıldığında üç şeyi kontrol eder:
 
 - **Saat dilimi** — bir şehir saat dilimi (örneğin Europe/Istanbul) uygundur. Sabit bir UTC ofseti (örneğin +03:00) **Kontrol
   et** olarak işaretlenir, çünkü yaz saati değişikliklerini izlemez. **Ayarlar → Genel**'den değiştirebilirsin.
-- **Ödeme yöntemi** — WooCommerce'te en az bir ödeme yöntemi açık olmalı.
+- **Ödeme yöntemi** — WooCommerce'te en az bir ödeme yöntemi açık olmalı. Hiçbiri açık değilse satır **WooCommerce → Ayarlar →
+  Ödemeler'den birini aç.** der.
 - **Ödeme bloğu** — ödeme sayfası Ödeme (Checkout) bloğunu kullanmalı. Kullanmıyorsa **Ödeme sayfasını bloğa çevir** düğmesi sayfa
   düzenleyicisini açar: Klasik Ödeme bloğunu seç ve “Bloklara dönüştür”ü seç.
 
-**Kontrol et** ile işaretlenenler seni durdurmaz; devam edebilir ya da **Bunu sonra yaparım** diyebilirsin.
+İlgilenmen gereken her satırda, [SSS](../05-faq/faq.md)'deki ilgili cevaba giden bir **Nasıl düzeltilir** bağlantısı vardır
+(yeni sekmede açılır). **Kontrol et** ile işaretlenenler seni durdurmaz; devam edebilir ya da **Bunu sonra yaparım** diyebilirsin.
 
 ![Adım 4: ödeme sayfası kontrolü](/img/docs/wizard/step-4-tr.webp)
 
@@ -66,6 +74,8 @@ Slotiva bu adım her açıldığında üç şeyi kontrol eder:
 Hizmetin, çalışma saatlerin, ürünün ve ödeme sayfanın özeti. **Değiştir** seni o adıma geri götürür (ödeme sayfası satırında
 yalnız bir sorun varsa görünür). İlk müşteriden önce **Deneme randevusu al** (ürün sayfanı yeni sekmede açar) ile kendin bir
 deneme randevusu al: saatin kapandığını ve e-postaların geldiğini gör.
+
+En altta **İlk kurulum rehberi** bu sayfayı yeni sekmede açar.
 
 ![Adım 5: özet](/img/docs/wizard/step-5-tr.webp)
 
@@ -79,4 +89,4 @@ Zorunlu üç madde — çalışma saatleri, ödeme sayfası ve randevulu bir ür
 ## Sihirbazı yeniden çalıştırmak
 
 **Slotiva → Ayarlar**'a git ve **Kurulum sihirbazını aç**'a tıkla. Sihirbaz mevcut ayarlarınla ve mevcut randevulu ürünün seçili
-olarak açılır.
+olarak açılır. Mevcut randevulu ürün kendi süresini, en az saat sayısını ve fiyatlamasını korur (bkz. [3. adım](#step-3)).

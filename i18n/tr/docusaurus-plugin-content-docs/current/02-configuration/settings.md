@@ -12,7 +12,7 @@ description: Randevulu ürünlere genel bakış, iptal politikası, kişisel ver
 
 ## Randevulu ürünler
 
-Her randevulu ürün; süresi, siparişteki saat sayısı ve fiyatlamasıyla. **Slotiva sekmesini aç →** ürünün kendi ayarlarına gider;
+Her randevulu ürün; süresi, siparişteki saat sayısı ve fiyatlamasıyla (**Sabit** ya da **Saat başına**). **Slotiva sekmesini aç →** ürünün kendi ayarlarına gider;
 **+ Yeni randevulu ürün** ve **Kurulum sihirbazını aç** sihirbazı başlatır. Bkz. [Randevulu ürün](./bookable-product.md).
 
 ## Politika

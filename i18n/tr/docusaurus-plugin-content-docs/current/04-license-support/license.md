@@ -24,7 +24,8 @@ gösterir.
 
 ## Lisans durumları
 
-Lisans ekranı her zaman şu durumlardan birini gösterir.
+Lisans ekranı her zaman şu durumlardan birini gösterir. Bir anahtar girildikten sonra ekranın altındaki **Bu lisans durumu
+hakkında** bu sayfanın ilgili bölümünü yeni sekmede açar.
 
 ### Etkin {#active}
 
@@ -36,7 +37,8 @@ kontrol et** yeniden kontrol eder) ve hesabına bir bağlantıyı gösterir.
 ### Yakında bitiyor {#expiring}
 
 Lisans 14 gün içinde bitiyor. Güncellemeler ve destek sürüyor; yenilersen kesintisiz devam eder — aboneliğin kendiliğinden
-yenileniyorsa yapman gereken bir şey yok. **Aboneliği yönet** hesabını açar.
+yenileniyorsa yapman gereken bir şey yok. **Aboneliği yönet** hesabını açar; **Yenileme nasıl çalışır?** bu sayfanın
+[Süresi doldu](#expired) bölümünü açar; **Şimdi kontrol et** lisansı yeniden kontrol eder, örneğin yeniledikten hemen sonra.
 
 ![Yakında bitecek lisans](/img/docs/license/expiring-tr.webp)
 
@@ -62,6 +64,12 @@ Slotiva lisans sunucusuna ulaşamadı. Güncellemeler son başarılı kontrolden
 geri gelirse hiçbir şey değişmez. Bu ek süre hiçbir zaman lisansın bitiş tarihini aşmaz. **Şimdi kontrol et** yeniden dener.
 
 ![Çevrimdışı ek süre](/img/docs/license/offline-tr.webp)
+
+## Yeni sürüm çıktığında
+
+Güncellemeler açıkken lisans ekranının üstündeki bir şerit yeni sürümü duyurur (**Slotiva … yayında.**). ZIP'i
+hesabından almak için **… sürümünü indir**'e tıkla, sonra **Eklentiler → Eklenti ekle → Eklenti yükle** ile kur — bkz.
+[Kurulum](../01-getting-started/installation.md).
 
 ## Lisansı başka siteye taşımak
 

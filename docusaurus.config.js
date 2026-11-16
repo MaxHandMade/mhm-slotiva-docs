@@ -43,7 +43,18 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/MaxHandMade/mhm-slotiva-docs/tree/main/',
         },
-        blog: false,
+        // Release notes: one post per plugin release, for shop owners.
+        blog: {
+          routeBasePath: 'release-notes',
+          blogTitle: 'Release notes',
+          blogDescription: 'What changes for your shop in each MHM Slotiva release.',
+          blogSidebarTitle: 'All releases',
+          blogSidebarCount: 'ALL',
+          showReadingTime: false,
+          onUntruncatedBlogPosts: 'ignore',
+          editUrl: 'https://github.com/MaxHandMade/mhm-slotiva-docs/tree/main/',
+          feedOptions: { type: ['rss', 'atom'], xslt: true },
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -73,6 +84,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          { to: '/release-notes', label: 'Release notes', position: 'left' },
           { type: 'localeDropdown', position: 'right' },
         ],
       },
@@ -85,6 +97,7 @@ const config = {
               { label: 'What is Slotiva?', to: '/docs/intro' },
               { label: 'Setup wizard', to: '/docs/getting-started/setup-wizard' },
               { label: 'FAQ', to: '/docs/faq/faq' },
+              { label: 'Release notes', to: '/release-notes' },
             ],
           },
           {

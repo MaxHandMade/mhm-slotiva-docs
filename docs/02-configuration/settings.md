@@ -12,7 +12,7 @@ description: Bookable products overview, cancellation policy, personal data, and
 
 ## Bookable products
 
-Every bookable product with its length, hours per order and pricing. **Open Slotiva tab** goes to the product's own settings;
+Every bookable product with its length, hours per order and pricing (**Fixed** or **Per slot**). **Open Slotiva tab** goes to the product's own settings;
 **+ New bookable product** and **Open the setup wizard** start the wizard. See [Bookable product](./bookable-product.md).
 
 ## Policy

@@ -6,5 +6,9 @@
   "item.label.Documentation": {
     "message": "Belgeler",
     "description": "Navbar item with label Documentation"
+  },
+  "item.label.Release notes": {
+    "message": "Sürüm notları",
+    "description": "Navbar item with label Release notes"
   }
 }

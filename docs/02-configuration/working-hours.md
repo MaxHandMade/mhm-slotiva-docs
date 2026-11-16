@@ -31,7 +31,7 @@ Each entry can carry a short note for yourself. Entries are listed with a **Dele
 
 | Rule | Default | What it does |
 |---|---|---|
-| Appointment length | 30 minutes | Default length of one appointment. A product can set its own length on its Slotiva tab. Must be a multiple of 15 minutes. |
+| Appointment length | 30 minutes | Default length of one appointment. A product can set its own length on its Slotiva tab. A multiple of 15 minutes, at most 480 (8 hours). |
 | Earliest booking | 24 hours ahead | How soon a customer can book. With 24, a customer cannot book a time that starts in the next 24 hours. |
 | Latest booking | 14 days ahead | How far ahead customers can book (1 to 62 days). |
 | Break between appointments | 0 minutes | Free time kept after each appointment. |

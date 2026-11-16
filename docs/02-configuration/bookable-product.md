@@ -16,7 +16,7 @@ for more products, or to fine-tune one, open the product and go to **Product dat
 | Field | What it does |
 |---|---|
 | **Bookable product** | Turns booking on for this product. The time picker appears at checkout when it is in the cart. |
-| **Slot length (minutes)** | How long one appointment lasts. Must be a multiple of 15. |
+| **Slot length (minutes)** | How long one appointment lasts. A multiple of 15, from 15 to 480 (8 hours). |
 | **Minimum slots** / **Maximum slots** | How many times a customer can book in one order, from 1 to 10 (minimum ≤ maximum). For 2–3 hour sessions set the maximum to 3 and use *Per slot* pricing. |
 | **Pricing** | **Per slot** — the product price is for one time; the cart quantity follows the number of times chosen. **Fixed (single slot)** — one price for one appointment. |
 | **Location** | Optional. Shown with the appointment (for example an address or "Online"). |
@@ -24,8 +24,9 @@ for more products, or to fine-tune one, open the product and go to **Product dat
 | **Latest booking (days ahead)** | Optional, 1 to 62. Leave empty to use the general rule. |
 | **Cancellation and change policy** | Optional. Leave empty to use the general policy from Slotiva → Settings. |
 
-If a value is not valid (for example a length of 50 minutes), WooCommerce shows an error at the top of the product page and none
-of the Slotiva fields are saved, so the product keeps its previous settings.
+If a value is not valid (for example a length of 50 or 600 minutes), WooCommerce shows an error at the top of the product page — for
+the length: *Slotiva: the slot length must be a multiple of 15 minutes (15 to 480).* — and none of the Slotiva fields are saved, so
+the product keeps its previous settings.
 
 ## Price
 

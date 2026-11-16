@@ -31,7 +31,7 @@ Her kayda kendin için kısa bir not ekleyebilirsin. Kayıtlar bir **Sil** bağl
 
 | Kural | Varsayılan | Ne yapar |
 |---|---|---|
-| Randevu süresi | 30 dakika | Bir randevunun varsayılan süresi. Bir ürün kendi süresini Slotiva sekmesinde belirleyebilir. 15 dakikanın katı olmalı. |
+| Randevu süresi | 30 dakika | Bir randevunun varsayılan süresi. Bir ürün kendi süresini Slotiva sekmesinde belirleyebilir. 15 dakikanın katı, en fazla 480 (8 saat). |
 | En erken | 24 saat sonrası | Müşterinin en erken ne zamana randevu alabileceği. 24 iken müşteri önümüzdeki 24 saat içinde başlayan bir saati alamaz. |
 | En geç | 14 gün ileri | Müşterinin ne kadar ileriye randevu alabileceği (1 ile 62 gün arası). |
 | Randevular arası ara | 0 dakika | Her randevudan sonra boş bırakılan süre. |

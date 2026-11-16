@@ -9,8 +9,10 @@ Needs: Node 20+, Google Chrome, the plugin's local Docker stack running. Default
 `SLOTIVA_SITE`, `SLOTIVA_COMPOSE` and `SLOTIVA_PRODUCT`.
 
 It changes the dev site only for the duration of the run and undoes every change, also on error: a temporary admin user,
-the admin language per pass, the site language for the customer pass, product names per language, a short "no bookable
-product" state for the checklist shot, and one guest test order per language (cancelled right after its screenshot).
+the admin language per pass, the site language for the customer pass, product names per language, the product and customer
+names stored on open appointments and the closed-day notes (English names on English shots), a short "no bookable product"
+state for the checklist shot, and one guest test order per language (cancelled right after its screenshot). Wizard steps 3
+and 5 open on `SLOTIVA_PRODUCT`, so a product that keeps its own length shows that note.
 License states are shown by answering the license screen's request inside the browser, so no license server is needed.
 
 Check every image before committing: all data must be fake.

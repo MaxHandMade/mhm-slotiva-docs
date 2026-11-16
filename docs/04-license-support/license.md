@@ -24,7 +24,8 @@ first 4 characters.
 
 ## License states
 
-The license screen always shows one of these states.
+The license screen always shows one of these states. Once a key is entered, **About this license status** at the bottom of the
+screen opens the matching section of this page in a new tab.
 
 ### Active {#active}
 
@@ -36,7 +37,8 @@ again) and a link to your account.
 ### Ending soon {#expiring}
 
 The license ends within 14 days. Updates and support still work; renew and they continue without a break — if your subscription
-renews automatically, there is nothing to do. **Manage subscription** opens your account.
+renews automatically, there is nothing to do. **Manage subscription** opens your account; **How does renewal work?** opens the
+[Expired](#expired) section of this page; **Check now** checks the license again, for example right after you renewed.
 
 ![License ending soon](/img/docs/license/expiring-en.webp)
 
@@ -62,6 +64,12 @@ Slotiva could not reach the license server. Updates stay on for up to **7 days**
 comes back in that time, nothing changes. The grace period never goes past the license end date. **Check now** tries again.
 
 ![Offline grace period](/img/docs/license/offline-en.webp)
+
+## When a new version is out
+
+While updates are on, a strip at the top of the license screen announces a new version (**Slotiva … is out.**). Click
+**Download …** to get the ZIP from your account, then install it via **Plugins → Add Plugin → Upload Plugin** — see
+[Installation](../01-getting-started/installation.md).
 
 ## Moving the license to another site
 

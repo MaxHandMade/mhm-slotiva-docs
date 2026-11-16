@@ -10,6 +10,9 @@
 // - switches the SITE language for the customer pass (front end follows the site, not the user) and restores it;
 // - `checklist`: marks every bookable product non-bookable for one shot, then restores the exact previous values;
 // - renames the products in PRODUCT_NAMES per locale and restores the original titles;
+// - `admin`: open appointments (confirmed/held) keep the product and customer name they were booked with, so their
+//   `product_name` follows PRODUCT_NAMES and, in English, customer name/email become EN_CUSTOMER; closed-day notes become
+//   EN_NOTE in English; exact values restored;
 // - `checkout`: places one guest bank-transfer order with fake `qa-` data for the "order received" shot, then cancels it.
 // It never reads secrets. Data on screen must be fake: check every image before committing.
 import { execFileSync } from 'node:child_process';
@@ -28,6 +31,9 @@ const PRODUCT = process.env.SLOTIVA_PRODUCT || '12';
 const LOCALES = { en: 'en_US', tr: 'tr_TR' };
 // Product names shown in screenshots, per locale (dev data is Turkish). Originals are restored at the end.
 const PRODUCT_NAMES = { en: { 11: 'Consultation', 12: 'Private lesson' }, tr: { 11: 'Danışmanlık', 12: 'Birebir ders' } };
+// Customer name on English admin shots (dev bookings carry Turkish test names).
+const EN_CUSTOMER = { name: 'Sample Customer', email: 'sample-customer@example.test' };
+const EN_NOTE = 'Day off';
 
 const args = process.argv.slice(2);
 const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
@@ -45,7 +51,7 @@ function wp(cmd, env = {}) {
 
 const lic = (o) => ({
   state: 'inactive', reason: '', key_masked: null, expires_at: null, days_left: null, updates: false, last_check_at: null,
-  latest_version: null, current_version: '1.0.2', download_url: 'https://wpalemi.com/download/mhm-slotiva', dev_blocked: false,
+  latest_version: null, current_version: '1.0.3', download_url: 'https://wpalemi.com/download/mhm-slotiva', dev_blocked: false,
   grace_until: null, account_url: 'https://wpalemi.com/account/', buy_url: '', ...o,
 });
 const day = (d) => new Date(Date.now() + d * 864e5).toISOString().replace(/\.\d+Z$/, 'Z');
@@ -58,6 +64,16 @@ const LICENSE = {
   unverified: lic({ state: 'expired', reason: 'unverified', key_masked: KEY, expires_at: day(200), days_left: 200, last_check_at: day(-9) }),
   offline: lic({ state: 'grace', reason: 'offline', key_masked: KEY, expires_at: day(200), days_left: 200, updates: true, last_check_at: day(-2), grace_until: day(5) }),
 };
+
+// Reads rows of a Slotiva table as a JSON string (`cols` include id) / writes such rows back by id (every column but id).
+// Values travel through env, never through the shell command line.
+const getRows = (table, cols, where) => wp(`eval "$PHP"`, {
+  PHP: `global $wpdb; echo wp_json_encode($wpdb->get_results("SELECT ${cols} FROM {$wpdb->prefix}slotiva_${table} WHERE ${where}"));`,
+});
+const setRows = (table, json) => wp(`eval "$PHP"`, {
+  PHP: `global $wpdb; foreach (json_decode(getenv('ROWS'), true) as $r) { $id = (int) $r['id']; unset($r['id'], $r['product_id']); $wpdb->update($wpdb->prefix . 'slotiva_${table}', $r, array('id' => $id)); }`,
+  ROWS: json,
+});
 
 async function main() {
   const password = randomBytes(18).toString('base64url');
@@ -72,6 +88,8 @@ async function main() {
     undo.push(() => { for (const [id, name] of Object.entries(originalNames)) wp(`post update ${id} --post_title="$NAME"`, { NAME: name }); });
     const page = await browser.newPage();
     let mock = null;
+    let resOriginal = null;
+    let excOriginal = null;
     await page.setRequestInterception(true);
     page.on('request', (r) => {
       if (mock && r.method() === 'GET' && /license(\?|$|&)/.test(r.url()) && /wp-json|rest_route/.test(r.url())) {
@@ -112,7 +130,10 @@ async function main() {
 
       if (want('wizard')) {
         for (let s = 0; s <= 5; s++) {
-          await go(`/wp-admin/admin.php?page=slotiva-setup&step=${s}`);
+          // Steps 3 and 5 open on PRODUCT (60 min, store default 30): step 3 shows the "keeps its own length" note and the
+          // summary shows the product's own length, as the wizard page describes for a re-run.
+          const pick = s === 3 || s === 5 ? `&product=${PRODUCT}` : '';
+          await go(`/wp-admin/admin.php?page=slotiva-setup&step=${s}${pick}`);
           await shot('wizard', `step-${s}`, loc);
         }
       }
@@ -127,6 +148,22 @@ async function main() {
         }
       }
       if (want('admin')) {
+        // Booked appointments keep their own product/customer name: set the per-locale names for this pass.
+        // Closed-day notes are free text (Turkish on the dev site): a neutral English note on English shots.
+        if (!resOriginal) {
+          resOriginal = getRows('reservations', 'id, product_id, product_name, customer_name, customer_email', "status IN ('confirmed','held')");
+          undo.push(() => setRows('reservations', resOriginal));
+          excOriginal = getRows('exceptions', 'id, note', "note <> ''");
+          undo.push(() => setRows('exceptions', excOriginal));
+        }
+        const rows = JSON.parse(resOriginal).map((r) => ({
+          id: r.id,
+          product_name: PRODUCT_NAMES[loc][r.product_id] || r.product_name,
+          customer_name: loc === 'en' ? EN_CUSTOMER.name : r.customer_name,
+          customer_email: loc === 'en' ? EN_CUSTOMER.email : r.customer_email,
+        }));
+        setRows('reservations', JSON.stringify(rows));
+        setRows('exceptions', JSON.stringify(JSON.parse(excOriginal).map((r) => ({ id: r.id, note: loc === 'en' ? EN_NOTE : r.note }))));
         await go('/wp-admin/admin.php?page=slotiva');
         await shot('admin', 'appointments', loc);
         const rid = wp("db query \"SELECT id FROM wp_slotiva_reservations WHERE status='confirmed' ORDER BY id DESC LIMIT 1\" --skip-column-names");

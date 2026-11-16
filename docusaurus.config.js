@@ -2,6 +2,8 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 
 const ACCOUNT_URL = 'https://wpalemi.com/account/';
+// Same store as the sibling docs sites' "Official Website" (Currency Switcher). Slotiva has no product page there yet.
+const OFFICIAL_URL = 'https://wpalemi.com/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -70,12 +72,12 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        // The horizontal logo already carries the "MHM Slotiva" wordmark: no separate title text.
+        // Icon + title text, like the sibling MHM docs sites (Rentiva, Currency Switcher). No GitHub item: the plugin
+        // repository is private, so a link would 404 for readers.
+        title: 'MHM Slotiva',
         logo: {
           alt: 'MHM Slotiva',
-          height: 32,
-          src: 'img/logo.png',
-          srcDark: 'img/logo-dark.png',
+          src: 'img/icon-512.png',
         },
         items: [
           {
@@ -84,7 +86,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          { to: '/release-notes', label: 'Release notes', position: 'left' },
+          { to: '/release-notes', label: 'Release Notes', position: 'left' },
           { type: 'localeDropdown', position: 'right' },
         ],
       },
@@ -94,26 +96,42 @@ const config = {
           {
             title: 'Documentation',
             items: [
-              { label: 'What is Slotiva?', to: '/docs/intro' },
+              { label: 'Quick start', to: '/docs/getting-started/installation' },
               { label: 'Setup wizard', to: '/docs/getting-started/setup-wizard' },
-              { label: 'FAQ', to: '/docs/faq/faq' },
-              { label: 'Release notes', to: '/release-notes' },
+              { label: 'Managing appointments', to: '/docs/daily-use/appointments' },
             ],
           },
           {
-            title: 'Your account',
+            title: 'Reference',
             items: [
-              { label: 'Account and support (wpalemi)', href: ACCOUNT_URL },
+              { label: 'FAQ', to: '/docs/faq/faq' },
+              { label: 'License', to: '/docs/license-support/license' },
+              { label: 'Release Notes', to: '/release-notes' },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              { label: 'Account and support', href: ACCOUNT_URL },
+              { label: 'Official Website', href: OFFICIAL_URL },
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} MaxHandMade.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MaxHandMade.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      // Same options as the sibling docs sites: both locales indexed, release notes findable.
+      { hashed: true, language: ['en', 'tr'], indexBlog: true },
+    ],
+  ],
 };
 
 export default config;

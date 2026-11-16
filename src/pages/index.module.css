@@ -1,48 +1,49 @@
-.hero {
-  background: #0b1530;
+/* Hero band in Slotiva colours: the dark navy of the banner (#0b1530) to the Slotiva purple (#5b5bd6), analogous to
+   Rentiva's navy -> turquoise and Currency Switcher's blue -> violet. White text on the lightest stop is 5.37:1. */
+.heroBanner {
+  background: linear-gradient(135deg, #0b1530 0%, #2b2b86 55%, #5b5bd6 100%);
+  /* Infima's .hero sets color: var(--ifm-hero-text-color) and wins the specificity tie with this module class, so the
+     variable is what has to change (same fix as the sibling sites). */
+  --ifm-hero-text-color: #fff;
   color: #fff;
-  padding: 2rem 1rem 2.5rem;
-}
-
-.heroInner {
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 3rem 1rem 2.5rem;
   text-align: center;
 }
 
-.banner {
-  display: block;
+.heroTitle {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Docusaurus' `img:not(#\#):not(#\#) { max-width: 100% }` outranks any class rule on the <img>, so the 1000px ceiling
+   sits on a wrapper <div> (same as the sibling sites). */
+.heroBannerFrame {
+  max-width: 1000px;
+  margin: 1.5rem auto 0;
+}
+
+.heroBannerImage {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-}
-
-.lead {
-  max-width: 720px;
-  margin: 1.5rem auto;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #e6e8f5;
-}
-
-.main {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1rem 3rem;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  padding: 0 1rem;
 }
 
 .card {
   display: block;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  overflow: hidden;
   color: inherit;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
@@ -54,19 +55,29 @@
   text-decoration: none;
 }
 
-.card h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.25rem;
-  color: var(--ifm-color-primary);
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  /* The checkout shot is portrait: keep its heading and day chips in view. */
+  object-position: top;
+  display: block;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
 
-.card p {
+.cardBody {
+  padding: 1rem 1.25rem 1.5rem;
+}
+
+.cardBody p {
   margin: 0;
   color: var(--ifm-color-emphasis-800);
 }
 
 .requires {
-  margin: 2rem 0 0;
+  max-width: 1000px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
   text-align: center;
   color: var(--ifm-color-emphasis-700);
   font-size: 0.95rem;

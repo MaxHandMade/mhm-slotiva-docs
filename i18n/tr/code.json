@@ -44,7 +44,7 @@
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
+    "message": "sistem modu",
     "description": "The name for the system color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
@@ -179,7 +179,7 @@
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.IconExternalLink.ariaLabel": {
-    "message": "(opens in new tab)",
+    "message": "(yeni sekmede açılır)",
     "description": "The ARIA label for the external link icon"
   },
   "theme.NavBar.navAriaLabel": {
@@ -259,11 +259,11 @@
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
+    "message": "Açılır menüyü genişlet",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
+    "message": "Açılır menüyü daralt",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.docs.sidebar.expandButtonTitle": {
@@ -326,40 +326,87 @@
     "message": "Etiketler",
     "description": "The title of the tag list page"
   },
-  "home.card.start.title": {
-    "message": "Başla"
-  },
-  "home.card.start.text": {
-    "message": "Slotiva ne yapar, bir randevu nasıl ilerler ve birkaç dakikada nasıl kurulur."
-  },
-  "home.card.daily.title": {
-    "message": "Günlük kullanım"
-  },
-  "home.card.daily.text": {
-    "message": "Müşterinin ödeme sayfasında gördükleri ve randevuları nasıl yönettiğin."
-  },
-  "home.card.license.title": {
-    "message": "Lisans ve destek"
-  },
-  "home.card.license.text": {
-    "message": "Lisans sana ne kazandırır, bitince ne olur ve yardımı nereden alırsın."
-  },
-  "home.meta.title": {
-    "message": "WooCommerce için saatlik randevu"
-  },
   "home.meta.description": {
     "message": "MHM Slotiva belgeleri: müşteri saatini doğrudan WooCommerce ödeme sayfasında seçer."
   },
   "home.banner.alt": {
     "message": "MHM Slotiva — WooCommerce için saatlik randevu. Müşteri saatini ödeme sayfasında seçer."
   },
-  "home.lead": {
-    "message": "Kendi WooCommerce mağazanda saatlik randevu sat. Müşterin ödeme sayfasında bir ya da birkaç saat seçer; Slotiva ödeme sürerken saati tutar, sen her şeyi WordPress içinden yönetirsin."
-  },
-  "home.cta": {
-    "message": "Belgeleri oku"
-  },
   "home.requires": {
     "message": "WordPress 7.0+, PHP 8.1+ ve Ödeme (Checkout) bloğuyla WooCommerce 11.2+ gerekir."
+  },
+  "home.title": {
+    "message": "MHM Slotiva Belgeleri"
+  },
+  "home.hero.title": {
+    "message": "MHM Slotiva Belgeleri"
+  },
+  "home.hero.subtitle": {
+    "message": "WooCommerce için saatlik randevu"
+  },
+  "home.hero.cta": {
+    "message": "Başla"
+  },
+  "home.card.checkout.alt": {
+    "message": "WooCommerce ödeme sayfasındaki saat seçici; aynı günden iki saat seçilmiş"
+  },
+  "home.card.checkout.title": {
+    "message": "Müşterin saatini ödeme sayfasında seçer"
+  },
+  "home.card.checkout.body": {
+    "message": "Müşterin günü ve bir ya da birkaç saati doğrudan WooCommerce ödeme sayfasında seçer ve tek adımda öder. Ödeme sürerken saat onun için tutulur; iki müşteri aynı saati asla alamaz."
+  },
+  "home.card.wizard.alt": {
+    "message": "Kurulum sihirbazının çalışma saatleri adımı; yanında müşterinin ödeme sayfasında göreceklerinin önizlemesi"
+  },
+  "home.card.wizard.title": {
+    "message": "Yaklaşık üç dakikada kurulum"
+  },
+  "home.card.wizard.body": {
+    "message": "Eklentiyi etkinleştirdiğin anda beş adımlı bir sihirbaz açılır: hizmet, çalışma saatleri, randevulu ürün ve ödeme sayfası. Her cevabı sonradan değiştirebilirsin."
+  },
+  "home.card.appointments.alt": {
+    "message": "Slotiva Randevular ekranı: sayaçlar ve yaklaşan randevular listesi"
+  },
+  "home.card.appointments.title": {
+    "message": "Randevular WordPress içinde"
+  },
+  "home.card.appointments.body": {
+    "message": "Bugünkü, yaklaşan, geçmiş ve iptal edilen randevuları tek listede gör. Saati değiştir, iptal et, elle randevu ekle ya da listeyi CSV olarak dışa aktar."
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "Sonuç yok"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "\"{context}\" dışındaki tüm sonuçları gör"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "\"{context}\" içindeki tüm sonuçları gör"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Tüm sonuçları gör"
+  },
+  "theme.SearchBar.label": {
+    "message": "Ara",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\" için sonuçlar",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Belgelerde ara",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "Her yerde"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1 belge bulundu|{count} belge bulundu",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Hiç belge bulunamadı",
+    "description": "The paragraph for empty search result"
   }
 }

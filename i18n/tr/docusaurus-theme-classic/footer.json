@@ -3,32 +3,48 @@
     "message": "Belgeler",
     "description": "The title of the footer links column with title=Documentation in the footer"
   },
-  "link.title.Your account": {
-    "message": "Hesabın",
-    "description": "The title of the footer links column with title=Your account in the footer"
+  "link.title.Reference": {
+    "message": "Başvuru",
+    "description": "The title of the footer links column with title=Reference in the footer"
   },
-  "link.item.label.What is Slotiva?": {
-    "message": "Slotiva nedir?",
-    "description": "The label of footer link with label=What is Slotiva? linking to /docs/intro"
+  "link.title.More": {
+    "message": "Daha fazla",
+    "description": "The title of the footer links column with title=More in the footer"
   },
-  "link.item.label.Account and support (wpalemi)": {
-    "message": "Hesap ve destek (wpalemi)",
-    "description": "The label of footer link with label=Account and support (wpalemi) linking to https://wpalemi.com/account/"
-  },
-  "copyright": {
-    "message": "© 2026 MaxHandMade.",
-    "description": "The footer copyright"
+  "link.item.label.Quick start": {
+    "message": "Hızlı başlangıç",
+    "description": "The label of footer link with label=Quick start linking to /docs/getting-started/installation"
   },
   "link.item.label.Setup wizard": {
     "message": "Kurulum sihirbazı",
     "description": "The label of footer link with label=Setup wizard linking to /docs/getting-started/setup-wizard"
   },
+  "link.item.label.Managing appointments": {
+    "message": "Randevuları yönetmek",
+    "description": "The label of footer link with label=Managing appointments linking to /docs/daily-use/appointments"
+  },
   "link.item.label.FAQ": {
     "message": "SSS",
     "description": "The label of footer link with label=FAQ linking to /docs/faq/faq"
   },
-  "link.item.label.Release notes": {
+  "link.item.label.License": {
+    "message": "Lisans",
+    "description": "The label of footer link with label=License linking to /docs/license-support/license"
+  },
+  "link.item.label.Release Notes": {
     "message": "Sürüm notları",
-    "description": "The label of footer link with label=Release notes linking to /release-notes"
+    "description": "The label of footer link with label=Release Notes linking to /release-notes"
+  },
+  "link.item.label.Account and support": {
+    "message": "Hesap ve destek",
+    "description": "The label of footer link with label=Account and support linking to https://wpalemi.com/account/"
+  },
+  "link.item.label.Official Website": {
+    "message": "Resmî site",
+    "description": "The label of footer link with label=Official Website linking to https://wpalemi.com/"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 MaxHandMade.",
+    "description": "The footer copyright"
   }
 }

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmhm_slotiva_docs=globalThis.webpackChunkmhm_slotiva_docs||[]).push([[634],{192(s,o,t){t.r(o),t.d(o,{default:()=>i});var a=t(6347),c=t(6025),h=t(4848);function i(){return(0,h.jsx)(a.rd,{to:(0,c.Ay)("/docs/intro")})}}}]);

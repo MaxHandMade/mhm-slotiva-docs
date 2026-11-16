@@ -41,7 +41,7 @@ Müşterinin ne satın alacağına karar ver:
 
 Fiyat geçerli bir sayı olmalı; 0 kabul edilir (örneğin ücretsiz ilk görüşme). Değilse sihirbaz **Geçerli bir fiyat gir.** der.
 
-Seçtiğin ürün **zaten randevuluysa** kendi süresini, en az saat sayısını ve fiyatlamasını korur — sihirbazı yeniden çalıştırmak
+Seçtiğin ürün **zaten randevuluysa** kendi süresini, en az saat sayısını (seçtiğin en çok saatten fazla olmaz) ve fiyatlamasını korur — sihirbazı yeniden çalıştırmak
 bunları sıfırlamaz (yalnız aşağıda **Evet** demek sabit fiyatlı ürünü saat başına fiyata çevirir). Süresi 1. adımdakinden farklıysa adım **Bu ürün kendi süresini koruyor (… dk). Ürünün Slotiva sekmesinden
 değiştirebilirsin.** der; müşteri önizlemesi ve 5. adımdaki özet ürünün süresini kullanır.
 

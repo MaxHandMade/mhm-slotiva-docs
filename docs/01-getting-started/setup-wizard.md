@@ -43,7 +43,7 @@ Decide what the customer buys:
 The price must be a valid number; 0 is allowed (for example a free first consultation). Otherwise the wizard says **Enter a valid
 price.**
 
-If the product you pick is **already bookable**, it keeps its own length, minimum hours and pricing — running the wizard again does
+If the product you pick is **already bookable**, it keeps its own length, minimum hours (never more than the maximum you choose) and pricing — running the wizard again does
 not reset them (only answering **Yes** below switches a fixed-price product to a price per hour). When its length differs from the one in step 1, the step says **This product keeps its own length (… min). Change it
 in the product’s Slotiva tab.**, and the customer preview and the summary in step 5 use the product's length.
 

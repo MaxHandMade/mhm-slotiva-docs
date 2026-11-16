@@ -18,5 +18,13 @@
   "copyright": {
     "message": "© 2026 MaxHandMade.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Setup wizard": {
+    "message": "Kurulum sihirbazı",
+    "description": "The label of footer link with label=Setup wizard linking to /docs/getting-started/setup-wizard"
+  },
+  "link.item.label.FAQ": {
+    "message": "SSS",
+    "description": "The label of footer link with label=FAQ linking to /docs/faq"
   }
 }

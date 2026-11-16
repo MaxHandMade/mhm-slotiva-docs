@@ -83,6 +83,8 @@ const config = {
             title: 'Documentation',
             items: [
               { label: 'What is Slotiva?', to: '/docs/intro' },
+              { label: 'Setup wizard', to: '/docs/getting-started/setup-wizard' },
+              { label: 'FAQ', to: '/docs/faq/faq' },
             ],
           },
           {

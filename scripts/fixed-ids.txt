@@ -1,2 +1,24 @@
 # <docs-relative-path> <heading-id>
 # Contract for plugin help links (Slotiva 1.0.3+): never rename; TR files keep the same ids.
+01-getting-started/setup-wizard.md step-1
+01-getting-started/setup-wizard.md step-2
+01-getting-started/setup-wizard.md step-3
+01-getting-started/setup-wizard.md step-4
+01-getting-started/setup-wizard.md step-5
+04-license-support/license.md active
+04-license-support/license.md expiring
+04-license-support/license.md expired
+04-license-support/license.md unverified
+04-license-support/license.md offline
+05-faq/faq.md picker-missing
+05-faq/faq.md no-free-times
+05-faq/faq.md time-zone
+05-faq/faq.md no-payment-method
+05-faq/faq.md held-vs-confirmed
+05-faq/faq.md too-many-holds
+05-faq/faq.md emails
+05-faq/faq.md uninstall
+05-faq/faq.md license-ends
+02-configuration/settings.md emails
+03-daily-use/customer-checkout.md while-paying
+03-daily-use/appointments.md conflicts

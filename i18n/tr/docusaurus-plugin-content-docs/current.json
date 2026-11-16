@@ -2,5 +2,45 @@
   "version.label": {
     "message": "Sonraki",
     "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Getting started": {
+    "message": "Başlarken",
+    "description": "The label for category 'Getting started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Getting started.link.generated-index.description": {
+    "message": "Slotiva'yı kur ve kurulumu birkaç dakikada bitir.",
+    "description": "The generated-index page description for category 'Getting started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Configuration": {
+    "message": "Yapılandırma",
+    "description": "The label for category 'Configuration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Configuration.link.generated-index.description": {
+    "message": "Çalışma saatleri, randevulu ürünler ve genel ayarlar.",
+    "description": "The generated-index page description for category 'Configuration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Daily use": {
+    "message": "Günlük kullanım",
+    "description": "The label for category 'Daily use' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Daily use.link.generated-index.description": {
+    "message": "Müşterinin gördükleri ve randevuları nasıl yönettiğin.",
+    "description": "The generated-index page description for category 'Daily use' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.License & support": {
+    "message": "Lisans ve destek",
+    "description": "The label for category 'License & support' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.License & support.link.generated-index.description": {
+    "message": "Lisansın sana ne kazandırdığı ve yardımı nereden alacağın.",
+    "description": "The generated-index page description for category 'License & support' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FAQ": {
+    "message": "SSS",
+    "description": "The label for category 'FAQ' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FAQ.link.generated-index.description": {
+    "message": "Mağaza sahiplerinin en çok sorduğu soruların yanıtları.",
+    "description": "The generated-index page description for category 'FAQ' in sidebar 'docsSidebar'"
   }
 }

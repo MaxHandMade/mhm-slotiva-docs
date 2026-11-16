@@ -16,7 +16,7 @@ const CARDS = [
     }),
   },
   {
-    to: '/docs/intro',
+    to: '/docs/daily-use/customer-checkout',
     title: translate({ id: 'home.card.daily.title', message: 'Daily use' }),
     text: translate({
       id: 'home.card.daily.text',
@@ -24,7 +24,7 @@ const CARDS = [
     }),
   },
   {
-    to: '/docs/intro',
+    to: '/docs/license-support/license',
     title: translate({ id: 'home.card.license.title', message: 'License & support' }),
     text: translate({
       id: 'home.card.license.text',

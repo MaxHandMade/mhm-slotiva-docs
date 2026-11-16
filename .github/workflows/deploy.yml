@@ -38,6 +38,12 @@ jobs:
       - name: Verify all internal links resolve
         run: bash scripts/check-links.sh
 
+      - name: Verify Turkish parity and fixed heading ids
+        run: bash scripts/check-i18n-parity.sh
+
+      - name: Verify no forbidden names in the built site
+        run: bash scripts/check-names.sh
+
       - name: Deploy to GitHub Pages (peaceiris)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4

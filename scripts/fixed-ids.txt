@@ -1,0 +1,2 @@
+# <docs-relative-path> <heading-id>
+# Contract for plugin help links (Slotiva 1.0.3+): never rename; TR files keep the same ids.

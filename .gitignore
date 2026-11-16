@@ -44,3 +44,6 @@ CLAUDE.md
 AGENTS.md
 .claude/
 scripts/shots/out/
+
+# Gate data (contract) — must be tracked despite *.txt above
+!scripts/fixed-ids.txt

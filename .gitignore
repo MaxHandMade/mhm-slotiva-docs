@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+.docusaurus/
+
+# Cache and temp
+/.cache/
+dist/
+npm-debug.log*
+
+# Lock files (use npm ci with package-lock.json)
+yarn.lock
+
+# Environment
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & Debug
+*.log
+*.txt
+build_log.txt
+build_output.log
+build_log_fixed.txt
+*.m4a
+
+# Sunum / YouTube prodüksiyon materyalleri (lokal kalır, public docs reposuna girmez)
+presentations/
+.claude/memory/
+.claude/settings.json
+.claude/settings.local.json
+
+# Local window card and ledger pointers (private paths) — never public
+CLAUDE.md
+AGENTS.md
+.claude/
+scripts/shots/out/

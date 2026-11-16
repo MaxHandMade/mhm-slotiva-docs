@@ -1,0 +1,36 @@
+/* Slotiva accent #5B5BD6 (brand brief) passes 5.37:1 on white; in dark mode it reads 3.20:1, so dark mode uses the
+   lighter tone #8B8BF0 of the same hue (5.77:1 on the default dark background). Measured 2026-11-16. */
+:root {
+  --ifm-color-primary: #5b5bd6;
+  --ifm-color-primary-dark: #4848cf;
+  --ifm-color-primary-darker: #3f3fc9;
+  --ifm-color-primary-darkest: #3030a8;
+  --ifm-color-primary-light: #6e6edb;
+  --ifm-color-primary-lighter: #7878de;
+  --ifm-color-primary-lightest: #9595e6;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #8b8bf0;
+  --ifm-color-primary-dark: #7070ec;
+  --ifm-color-primary-darker: #6363ea;
+  --ifm-color-primary-darkest: #3b3be4;
+  --ifm-color-primary-light: #a6a6f4;
+  --ifm-color-primary-lighter: #b3b3f6;
+  --ifm-color-primary-lightest: #dadafb;
+  --ifm-background-color: #0b1530;
+  --ifm-navbar-background-color: #0b1530;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__title {
+  font-weight: 600;
+}
+
+/* Screenshots: keep them inside the text column and give them an edge on white pages. */
+.markdown img {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
